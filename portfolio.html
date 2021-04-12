@@ -22,23 +22,30 @@
     <!--Шапка сайта-->
     <header>
       <div class="container main-nav">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo link">
-            <span class="span-web">Web</span
-            ><span class="span-studio">Studio</span></a
+        <nav class="navigation">
+          <a
+            href="./index.html"
+            class="navigation__logo navigation__logo--upper"
           >
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link link-item">Студия</a>
+            <span class="navigation__span navigation__span--accent">Web</span
+            ><span class="navigation__span navigation__span--primary"
+              >Studio</span
+            ></a
+          >
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
-            <li class="item">
+            <li class="site-nav__item">
               <a
                 href="./portfolio.html"
-                class="link link-current portfolio link-item"
+                class="site-nav__link--current site-nav__link--portfolio site-nav__link"
                 >Портфолио</a
               >
             </li>
-            <li class="item"><a href="" class="link link-item">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -340,12 +347,14 @@
       <div class="container">
         <div class="web-list">
           <div class="web-item-one">
-            <a href="./" class="link logo-footer">
-              <span class="span-web">Web</span
-              ><span class="span-studio-footer">Studio</span></a
+            <a href="./" class="navigation__logo navigation__logo--lower">
+              <span class="navigation__span navigation__span--accent">Web</span
+              ><span class="navigation__span navigation__span--secondary"
+                >Studio</span
+              ></a
             >
             <address class="address">
-              <ul class="list">
+              <ul class="">
                 <li class="item-contact">
                   <a
                     href="https://goo.gl/maps/Ed6KkoPYDBSFaAVK7"
