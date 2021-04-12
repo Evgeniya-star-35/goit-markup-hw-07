@@ -637,22 +637,18 @@ header {
   background-color: var(--bg-hero-color);
 }
 
-.web-list {
+.footer-web {
   display: flex;
   align-items: baseline;
 }
 
-.web-item-one {
+.footer-web__part {
   display: block;
   margin-right: 30px;
   flex-basis: calc((50% - 45px) / 2);
 }
-.web-item-two {
-  display: block;
-  margin-right: 30px;
-  flex-basis: calc((50% - 45px) / 2);
-}
-.web-item-three {
+
+.footer-web__form-part {
   display: block;
   flex-basis: calc(50%-15px);
 }
@@ -663,38 +659,35 @@ header {
 .navigation__span--secondary {
   color: var(--primery-white-color);
 }
-.address {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--button-hero-text-color);
-  font-style: normal;
-}
-.email,
-.tel {
+
+.address__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
-.item-contact {
+.address__link--white {
+  color: var(--button-hero-text-color);
+}
+.address__item {
   margin-bottom: 9px;
 }
-.item-contact:last-child {
+.address__item:last-child {
   margin-bottom: 0;
 }
 .footer-social {
   display: flex;
   justify-items: flex-start;
 }
-.footer-social-item {
+.footer-social__item {
   width: 44px;
   height: 44px;
 }
-.footer-social-item:not(:last-child) {
+.footer-social__item:not(:last-child) {
   margin-right: 10px;
 }
-.join {
+.footer-web__join {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -705,7 +698,7 @@ header {
   color: var(--button-hero-text-color);
 }
 
-.link-footer {
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,12 +711,12 @@ header {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-.link-footer:hover,
-.link-footer:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   color: var(--primery-white-color);
   background-color: var(--accent-background-color);
 }
-.footer-icon {
+.footer-social__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
