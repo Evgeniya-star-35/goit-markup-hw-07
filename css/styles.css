@@ -175,19 +175,18 @@ header {
   border-radius: 2px;
 }
 
-.contact {
+.contacts {
   display: flex;
   justify-content: center;
   margin-left: auto;
 }
-.contact > .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-email,
-.header-tel {
-  display: flex;
-  align-items: center;
+.contacts__link {
+  display: inline-flex;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -199,12 +198,11 @@ header {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-.header-email:hover,
-.header-tel:hover {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
-.icon-email,
-.icon-tel {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
