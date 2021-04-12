@@ -458,18 +458,15 @@ a:focus {
 }
 
 /*Clients*/
-.list-clients {
+.clients {
   display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
 }
-.item-client {
+.clients__item {
   flex-basis: calc((100% - 6 * 30px) / 6);
   margin-left: 30px;
-  margin-top: 30px;
 }
-.link-client {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,8 +479,8 @@ a:focus {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-.link-client:hover,
-.link-client:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
   outline: var(--accent-color);
   fill: var(--accent-color);
