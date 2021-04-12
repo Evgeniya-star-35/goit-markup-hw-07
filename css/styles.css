@@ -482,13 +482,14 @@ header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--client-color-icon);
-  transition-property: border-color, fill;
+  transition-property: border-color, outline, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
 .link-client:hover,
 .link-client:focus {
   border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -928,10 +929,10 @@ header {
   background-color: #188ce8;
 }
 
-.input-form {
+.footer-form {
   display: inline-flex;
 }
-.footer-input {
+.footer-form__input {
   width: 358px;
   font-size: 16px;
   line-height: 1.25;
@@ -946,7 +947,7 @@ header {
   background-color: var(--bg-hero-color);
 }
 
-.text-email::placeholder {
+.footer-form__text::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
