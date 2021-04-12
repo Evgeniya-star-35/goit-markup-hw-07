@@ -42,6 +42,9 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -91,7 +94,7 @@ a:focus {
   align-items: center;
 }
 
-header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -99,25 +102,25 @@ header {
   display: flex;
   align-items: center;
 }
-.navigation__logo {
+.logo {
   display: block;
 }
-.navigation__logo--upper {
+.page-header__logo {
   margin-right: 94px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.navigation__span {
+.logo__span {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.navigation__span--accent {
+.logo__span--accent {
   color: var(--accent-color);
 }
-.navigation__span--primary {
+.logo__span--primary {
   color: var(--primary-text-color);
 }
 .site-nav {
@@ -138,7 +141,6 @@ header {
 }
 .site-nav__link--current {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
 .site-nav__link--studio {
@@ -230,9 +232,7 @@ header {
   background-position: center;
 }
 
-.hero-title {
-  margin: 0 auto;
-  margin-bottom: 30px;
+.section-hero__title {
   max-width: 696px;
   color: var(--primery-white-color);
   font-weight: 900;
@@ -241,6 +241,10 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+.section-hero__title--center {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .animate__backInDown {
   animation-name: backInDown;
@@ -255,7 +259,7 @@ header {
   animation-duration: 2500ms;
   animation-timing-function: var(--timing-function);
   animation-delay: 2000ms;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
 }
 .animate__rotateOut {
   animation-name: rotateOut;
@@ -267,18 +271,16 @@ header {
 }
 .hero-button {
   cursor: pointer;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  border: 1px solid transparent;
   height: 50px;
+  border-radius: 4px;
+  border: 1px solid transparent;
   color: var(--button-hero-text-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -287,6 +289,10 @@ header {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+}
+.hero-button--center {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*преимущества*/
@@ -297,17 +303,14 @@ header {
 }
 .features {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
-.item-features {
-  margin-top: 30px;
+.features__item {
   margin-left: 30px;
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
-.icon-features {
+.features__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,7 +320,7 @@ header {
   border-radius: 4px;
 }
 
-.title-content {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -327,9 +330,7 @@ header {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.p-text {
-  margin-top: 0;
-  margin-bottom: 0;
+.features__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -654,10 +655,10 @@ header {
   flex-basis: calc(50%-15px);
 }
 
-.navigation__logo--lower {
+.section-footer__logo {
   margin-bottom: 20px;
 }
-.navigation__span--secondary {
+.logo__span--secondary {
   color: var(--primery-white-color);
 }
 
@@ -973,14 +974,16 @@ header {
 .button-footer:focus {
   background-color: #188ce8;
 }
-.text-button-footer {
+.button-footer__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primery-white-color);
 }
-.icon-send {
-  margin-left: 10px;
+.button-footer__icon {
   fill: var(--primery-white-color);
+}
+.button-footer__icon--end {
+  margin-left: 10px;
 }

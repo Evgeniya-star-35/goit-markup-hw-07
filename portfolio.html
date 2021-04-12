@@ -23,14 +23,9 @@
     <header>
       <div class="container main-nav">
         <nav class="navigation">
-          <a
-            href="./index.html"
-            class="navigation__logo navigation__logo--upper"
-          >
-            <span class="navigation__span navigation__span--accent">Web</span
-            ><span class="navigation__span navigation__span--primary"
-              >Studio</span
-            ></a
+          <a href="./index.html" class="logo page-header__logo">
+            <span class="logo__span logo__span--accent">Web</span
+            ><span class="logo__span logo__span--primary">Studio</span></a
           >
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -349,11 +344,9 @@
       <div class="container">
         <div class="footer-web">
           <div class="footer-web__part">
-            <a href="./" class="navigation__logo navigation__logo--lower">
-              <span class="navigation__span navigation__span--accent">Web</span
-              ><span class="navigation__span navigation__span--secondary"
-                >Studio</span
-              ></a
+            <a href="./" class="logo section-footer__logo">
+              <span class="logo__span logo__span--accent">Web</span
+              ><span class="logo__span logo__span--secondary">Studio</span></a
             >
             <address class="address">
               <ul>
@@ -426,8 +419,12 @@
                 </label>
 
                 <button class="button-footer" type="submit">
-                  <span class="text-button-footer">Подписаться</span>
-                  <svg class="icon-send" width="24" height="24">
+                  <span class="button-footer__text">Подписаться</span>
+                  <svg
+                    class="button-footer__icon button-footer__icon--end"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/sprite.svg#icon-sendteleg"></use>
                   </svg>
                 </button>
