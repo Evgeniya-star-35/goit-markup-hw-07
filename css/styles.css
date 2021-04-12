@@ -340,17 +340,24 @@ a:focus {
 /*business*/
 .business {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
-.business-item {
+.business__item {
   position: relative;
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
-.business-title {
+.app {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.app__title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -370,16 +377,6 @@ a:focus {
   animation-iteration-count: 3;
 }
 
-.app {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-}
 /*Our team*/
 .team {
   background-color: var(--secondary-background-color);
