@@ -56,7 +56,7 @@
   }
 }
 
-&__link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,13 +69,13 @@
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     fill: $primery-white-color;
     background-color: $accent-background-color;
   }
 }
-&__icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
 }
