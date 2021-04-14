@@ -25,8 +25,8 @@
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="navigation">
+      <div class="container page-header__main">
+        <nav class="page-header__navigation">
           <a href="" class="logo page-header__logo">
             <span class="logo__span logo__span--accent">Web</span
             ><span class="logo__span logo__span--primary">Studio</span></a
@@ -71,16 +71,12 @@
     <main>
       <!--Герой-->
 
-      <section class="section-hero overlay">
-        <h1 class="section-hero__title animate__backInDown">
+      <section class="hero hero__overlay">
+        <h1 class="hero__title animate__backInDown">
           Эффективные решения для вашего бизнеса
         </h1>
-        <button
-          data-modal-open
-          type="button"
-          class="hero-button hero-button--central"
-        >
-          Заказать услугу
+        <button data-modal-open type="button" class="button">
+          <span class="button__label">Заказать услугу</span>
         </button>
       </section>
 
@@ -143,7 +139,7 @@
       <!--Чем мы занимаемся-->
       <section class="section">
         <div class="container">
-          <h2>Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="business">
             <li class="business__item animate__bounceInRight">
               <img
@@ -153,8 +149,8 @@
                 height="294"
                 class="img"
               />
-              <div class="app">
-                <h3 class="app__title">Десктопные приложения</h3>
+              <div class="business__app">
+                <h3 class="business__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="business__item animate__bounceInRight">
@@ -165,8 +161,8 @@
                 height="294"
                 class="img"
               />
-              <div class="app">
-                <h3 class="app__title">Мобильные приложения</h3>
+              <div class="business__app">
+                <h3 class="business__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="business__item animate__bounceInRight">
@@ -177,8 +173,8 @@
                 height="294"
                 class="img"
               />
-              <div class="app">
-                <h3 class="app__title">Дизайнерские решения</h3>
+              <div class="business__app">
+                <h3 class="business__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -189,9 +185,9 @@
 
       <section class="section team">
         <div class="container">
-          <h2>Наша команда</h2>
-          <ul class="team-card-set">
-            <li class="team-card-set__item">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team-cardset">
+            <li class="team-cardset__item">
               <div>
                 <img
                   src="./images/foto1/igor.jpg"
@@ -201,9 +197,9 @@
                   class="img animate__rotateOut"
                 />
               </div>
-              <div class="team-card-set__content">
-                <h3 class="team-card-set__name">Игорь Демьяненко</h3>
-                <p class="team-card-set__prof">Product Designer</p>
+              <div class="team-cardset__content">
+                <h3 class="team-cardset__name">Игорь Демьяненко</h3>
+                <p class="team-cardset__prof">Product Designer</p>
               </div>
               <ul class="social-list">
                 <li class="social-list__item">
@@ -261,7 +257,7 @@
               </ul>
             </li>
 
-            <li class="team-card-set__item">
+            <li class="team-cardset__item">
               <div>
                 <img
                   src="./images/foto1/olga.jpg"
@@ -271,9 +267,9 @@
                   class="img animate__rotateOut"
                 />
               </div>
-              <div class="team-card-set__content">
-                <h3 class="team-card-set__name">Ольга Репина</h3>
-                <p class="team-card-set__prof">Frontend Developer</p>
+              <div class="team-cardset__content">
+                <h3 class="team-cardset__name">Ольга Репина</h3>
+                <p class="team-cardset__prof">Frontend Developer</p>
               </div>
               <ul class="social-list">
                 <li class="social-list__item">
@@ -330,7 +326,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-card-set__item">
+            <li class="team-cardset__item">
               <div>
                 <img
                   src="./images/foto1/nick.jpg"
@@ -340,9 +336,9 @@
                   class="img animate__rotateOut"
                 />
               </div>
-              <div class="team-card-set__content">
-                <h3 class="team-card-set__name">Николай Тарасов</h3>
-                <p class="team-card-set__prof">Marketing</p>
+              <div class="team-cardset__content">
+                <h3 class="team-cardset__name">Николай Тарасов</h3>
+                <p class="team-cardset__prof">Marketing</p>
               </div>
               <ul class="social-list">
                 <li class="social-list__item">
@@ -399,7 +395,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-card-set__item">
+            <li class="team-cardset__item">
               <div>
                 <img
                   src="./images/foto1/mihail.jpg"
@@ -409,9 +405,9 @@
                   class="img animate__rotateOut"
                 />
               </div>
-              <div class="team-card-set__content">
-                <h3 class="team-card-set__name">Михаил Ермаков</h3>
-                <p class="team-card-set__prof">UI Designer</p>
+              <div class="team-cardset__content">
+                <h3 class="team-cardset__name">Михаил Ермаков</h3>
+                <p class="team-cardset__prof">UI Designer</p>
               </div>
               <ul class="social-list">
                 <li class="social-list__item">
@@ -474,7 +470,7 @@
       <!--Наши клиенты-->
       <section class="section">
         <div class="container">
-          <h2>Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients">
             <li class="clients__item">
               <a
@@ -563,8 +559,8 @@
 
     <footer class="section-footer">
       <div class="container">
-        <div class="footer-web">
-          <div class="footer-web__part">
+        <div class="widget">
+          <div class="widget__part">
             <a href="./" class="logo section-footer__logo">
               <span class="logo__span logo__span--accent">Web</span
               ><span class="logo__span logo__span--secondary">Studio</span></a
@@ -594,8 +590,8 @@
               </ul>
             </address>
           </div>
-          <div class="footer-web__part animate__zoomInDown">
-            <b class="footer-web__join">присоединяйтесь</b>
+          <div class="widget__part animate__zoomInDown">
+            <b class="widget__join">присоединяйтесь</b>
             <ul class="footer-social">
               <li class="footer-social__item">
                 <a
@@ -652,9 +648,9 @@
             </ul>
           </div>
 
-          <div class="footer-web__form-part">
+          <div class="widget__form-part">
             <form name="form" autocomplete="on">
-              <b class="footer-web__join">Подпишитесь на рассылку</b>
+              <b class="widget__join">Подпишитесь на рассылку</b>
               <div class="footer-form">
                 <label>
                   <input
