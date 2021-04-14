@@ -1,0 +1,30 @@
+.clients {
+  display: flex;
+  margin-left: -30px;
+
+  &__item {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+    margin-left: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: $client-color-icon;
+    transition-property: border-color, outline, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      outline: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

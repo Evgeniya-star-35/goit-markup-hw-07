@@ -1,0 +1,54 @@
+.site-nav {
+  display: flex;
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link--current {
+    color: $accent-color;
+  }
+
+  &__studio {
+    position: relative;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  &__studio::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  &__portfolio {
+    position: relative;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  &__portfolio::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}

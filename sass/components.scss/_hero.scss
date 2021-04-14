@@ -1,0 +1,84 @@
+.hero {
+  background-color: $bg-hero-color;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  &__overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/foto3/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: $primery-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.animate__backInDown {
+  animation-name: backInDown;
+  animation-duration: 2500ms;
+  animation-timing-function: $timing-function;
+  animation-delay: 200ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.animate__zoomInDown {
+  animation-name: zoomInDown;
+  animation-duration: 2500ms;
+  animation-timing-function: $timing-function;
+  animation-delay: 2000ms;
+  animation-iteration-count: 1;
+}
+.animate__rotateOut {
+  animation-name: rotateOut;
+  animation-duration: 3500ms;
+  animation-timing-function: $timing-function;
+  animation-delay: 2000ms;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+}
+.button {
+  cursor: pointer;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: $button-hero-text-color;
+  background-color: $accent-color;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  }
+}
