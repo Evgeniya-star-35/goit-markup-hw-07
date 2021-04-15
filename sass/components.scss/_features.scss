@@ -5,12 +5,12 @@
 .features {
   display: flex;
   margin-left: -30px;
-
-  &__item {
-    margin-left: 30px;
-    flex-basis: calc((100% - 4 * 30px) / 4);
-  }
 }
+.features__item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
 .features__icon {
   display: flex;
   justify-content: center;

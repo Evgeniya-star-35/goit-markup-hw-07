@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   margin-left: auto;
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+}
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contacts__link {

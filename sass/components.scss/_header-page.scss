@@ -1,11 +1,10 @@
 .page-header {
   border-bottom: 1px solid $bg-color;
   border-bottom: 1px solid $bg-color;
-
-  &__main {
-    display: flex;
-    align-items: center;
-  }
+}
+.page-header__main {
+  display: flex;
+  align-items: center;
 }
 
 .page-header__navigation {

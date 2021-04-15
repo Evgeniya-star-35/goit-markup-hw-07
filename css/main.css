@@ -252,14 +252,6 @@ a:focus {
   animation-iteration-count: infinite;
 }
 
-.animate__zoomInDown {
-  animation-name: zoomInDown;
-  animation-duration: 2500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 2000ms;
-  animation-iteration-count: 1;
-}
-
 .button {
   cursor: pointer;
   padding: 10px 32px;
@@ -335,13 +327,13 @@ a:focus {
   margin-left: -30px;
 }
 
-.business__item {
+.business .business__item {
   position: relative;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.business__app {
+.business .business__app {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -352,7 +344,7 @@ a:focus {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.business__title {
+.business .business__title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;

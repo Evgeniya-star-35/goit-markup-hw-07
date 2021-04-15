@@ -11,18 +11,18 @@
 .widget {
   display: flex;
   align-items: baseline;
-
-  &__part {
-    display: block;
-    margin-right: 30px;
-    flex-basis: calc((50% - 45px) / 2);
-  }
-
-  &__form-part {
-    display: block;
-    flex-basis: calc(50%-15px);
-  }
 }
+.widget__part {
+  display: block;
+  margin-right: 30px;
+  flex-basis: calc((50% - 45px) / 2);
+}
+
+.widget__form-part {
+  display: block;
+  flex-basis: calc(50%-15px);
+}
+
 .widget__join {
   display: block;
   margin-bottom: 20px;
