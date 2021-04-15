@@ -6,27 +6,28 @@
   &__item:not(:last-child) {
     margin-right: 30px;
   }
+}
 
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $secondary-text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
-  }
-  &__link:hover,
-  &__link:focus {
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }

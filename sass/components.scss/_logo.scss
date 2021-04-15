@@ -1,17 +1,17 @@
 .logo {
   display: block;
+}
+.logo__span {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
-  &__span {
-    font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-  }
-  &__span--accent {
+  &--accent {
     color: $accent-color;
   }
-  &__span--primary {
+  &--primary {
     color: $primary-text-color;
   }
 }
