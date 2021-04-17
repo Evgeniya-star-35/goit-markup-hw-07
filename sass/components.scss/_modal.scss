@@ -44,9 +44,7 @@
 }
 
 .modal__close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex(flex);
   position: absolute;
   cursor: pointer;
   right: 8px;

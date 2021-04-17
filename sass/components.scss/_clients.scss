@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $accent-color;
+    @include bordered($accent-color);
     outline: $accent-color;
     fill: $accent-color;
   }

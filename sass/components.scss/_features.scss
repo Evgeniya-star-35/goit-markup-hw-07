@@ -12,9 +12,7 @@
 }
 
 .features__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex(flex);
   width: 100%;
   height: 120px;
   background: $secondary-background-color;
