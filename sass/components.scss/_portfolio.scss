@@ -22,7 +22,7 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
   background-color: $secondary-background-color;
-  border: 1px solid transparent;
+  @include bordered(transparent);
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;

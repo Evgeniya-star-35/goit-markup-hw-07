@@ -185,7 +185,7 @@ a:focus {
   margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
+.contacts .contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
