@@ -976,7 +976,7 @@ a:focus {
   height: 15px;
   margin-right: 8.38px;
   border-radius: 2px;
-  border: 2px solid #212121;
+  border: 1px solid #000000;
 }
 
 .modal-checkbox__input:checked + .modal-checkbox__icon {
